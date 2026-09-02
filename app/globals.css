@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #16191d;
+  background-color: #fafaf7;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #d4a373;
+  color: #ffffff;
+}
+
+/* Smooth Image Fade-in */
+.image-overlay-gradient {
+  background: linear-gradient(180deg, rgba(15, 44, 58, 0.4) 0%, rgba(15, 44, 58, 0.85) 100%);
+}
+
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(15, 44, 58, 0.5) 0%, rgba(15, 44, 58, 0.3) 40%, rgba(15, 44, 58, 0.75) 100%);
+}
